@@ -4,7 +4,6 @@ import com.greetingapp.model.Greeting;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
@@ -13,7 +12,7 @@ public class GreetingController {
     private final AtomicLong counter = new AtomicLong();//used for auto increment
 
     /**
-     * @URL:localhost:8080/greeting
+     * @URL:localhost:8080/greeting  -Postman-GET
      * @return: {id =1 , content="hello world!}
      * localhost:8080/greeting?name=Suraj
      * @return: { id=2, content="hello Suraj!
